@@ -11,5 +11,8 @@ export default {
 </script>
 
 <style>
-
+body{
+  max-width: 768px;
+  margin: 0 auto;
+}
 </style>

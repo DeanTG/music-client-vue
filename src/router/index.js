@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../views/Login'
+import Register from '../views/Register'
 
 import Home from '../views/Home'
 
@@ -16,6 +17,12 @@ const router = new Router({
         title: '登录'
       }
     }, {
+      path: '/register',
+      component: Register,
+      meta: {
+        title: '注册'
+      }
+    },{
       path: '/home',
       component: Home,
       meta: {
