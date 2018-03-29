@@ -3,10 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import {Button} from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
+import { Field,Button } from 'mint-ui'
+import 'reset-style';
 
-Vue.use(Button);
+Vue.component(Button.name, Button)
+Vue.component(Field.name, Field)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

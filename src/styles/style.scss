@@ -1,0 +1,9 @@
+@import '../../node_modules/sass-preset/_sass-preset.scss';
+@import url('//at.alicdn.com/t/font_608687_yex8hat6vowghkt9.css');
+
+$theme-color: #ffafc9;
+$shadow: 4px 4px 10px rgba(0, 0, 0, 0.08), -4px -4px 10px rgba(0, 0, 0, 0.08);
+
+.mint-cell-wrapper{
+  background-position: bottom left;
+}
