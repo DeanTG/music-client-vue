@@ -2,14 +2,19 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '../views/Login'
 import Register from '../views/Register'
-
 import Home from '../views/Home'
+import Search from '../views/Search'
+
 
 Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
   routes: [
+    {
+      path: '/',
+      redirect: '/home'
+    },
     {
       path: '/login',
       component: Login,
@@ -28,6 +33,15 @@ const router = new Router({
       meta: {
         title: '首页'
       }
+    },{
+      path: '/search',
+      component: Search,
+      meta: {
+        title: '搜索'
+      }
+    },{
+      path: '*',
+      redirect: '/login'
     }
   ]
 })

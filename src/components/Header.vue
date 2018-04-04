@@ -3,7 +3,7 @@
     <i class="iconfont icon-music"></i>
     <div class="search-container">
       <i class="iconfont icon-Search"></i>
-      <input type="text" placeholder="输入歌手、歌曲名搜索">
+      <input type="text" placeholder="输入歌手、歌曲名搜索" @focus="toSearch">
     </div>
     <img src="../assets/images/user.png" alt="" class="avatar">
   </header>
@@ -11,7 +11,12 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  methods: {
+    toSearch() {
+      this.$router.push({path: '/search'})
+    }
+  }
 };
 </script>
 
@@ -35,7 +40,7 @@ export default {
     margin: 0 20px;
     border-radius: 14px;
     background: #ebecec;
-    i{
+    i {
       width: 20px;
       font-size: 14px;
     }

@@ -3,13 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import {Field, Button, Swipe, SwipeItem} from 'mint-ui'
+import {Field, Button, Swipe, SwipeItem, Search} from 'mint-ui'
 import 'reset-style';
 
 Vue.component(Button.name, Button)
 Vue.component(Field.name, Field)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
+Vue.component(Search.name, Search)
 
 
 Vue.config.productionTip = false
